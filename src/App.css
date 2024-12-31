@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.traffic-light {
+  display: inline-block;
+  width: 100px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: #555;
+  transition: background-color 0.5s;
+}
+
+.light.active {
+  background-color: red;
+}
+
+.light.yellow.active {
+  background-color: yellow;
+}
+
+.light.green.active {
+  background-color: green;
+}
+
+.light.green-blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
